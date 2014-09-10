@@ -1,0 +1,74 @@
+/* Common styles*/
+body{background: #fff;}
+.btn{border:none;}
+.center{text-align: center;}
+
+/* Navigation */
+.navbar{margin-bottom: 0px;}
+.above-nav, .nav-btn{float: right;}
+.above-nav{margin: 10px auto;}
+.above-nav a{margin-left: 15px;}
+
+.nav-btn{margin-left: 20px;}
+.nav-btn .btn{margin-left: 10px;}
+.nav li a:link, .nav li a:visited, .above-nav a:link, .above-nav a:visited{color: #4d4d4d;}
+.navbar-nav>li>a { padding-top: 10px; padding-bottom: 10px; }
+/*.navbar-collapse.in ul li a{text-align: center;}*/
+@media(max-width: 760px){
+	.nav-btn{display: none;}
+}
+
+
+/* Header */
+.banner img{width:100%;}
+.action{margin-top: -40px;}
+.action a {width:180px;}
+
+/*.header {
+  color: white;
+  text-align: center;
+  background: url('../images/header_bg_goodby2.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.header h1 {
+	font-size: 1.3em;
+	padding: 15px 0;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+}*/
+@media(min-width: 480px){
+	.action{}
+}
+@media(min-width: 760px){
+	.action{margin-top: -50px;}
+}
+
+
+
+
+/* Footer*/
+
+footer {
+  width: 100%;
+}
+.footer {
+  margin-top: 100px;
+  color: #f1f1f2;
+}
+.footer .bg-gray {
+  padding: 40px 0 40px 0;
+}
+.footer li {
+  list-style: none;
+}
+.footer a:link, .footer a:visited {
+  color: #f1f1f2;
+}
+.footer a:hover {
+  color: #7ac142;
+  text-decoration: none;
+}
+.footer li:first-child, .footer li:nth-child(2) {
+  border-right: 1px solid white;
+}

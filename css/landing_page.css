@@ -44,7 +44,7 @@ a:link, a:visited, a:active {
   -webkit-box-shadow: 0 0 10px 3px #ccc;
           box-shadow: 0 0 10px 3px #ccc;
 }
-.bg-white {
+/*.bg-white {
   background: white;
 }
 .bg-green {
@@ -55,7 +55,7 @@ a:link, a:visited, a:active {
 }
 .color-green {
   color: #7ac142;
-}
+}*/
 
 .large {
   font-size: 20px;
@@ -90,19 +90,21 @@ a:link, a:visited, a:active {
   border: 1px solid black;
 }
 .navbar-toggle {
-  background: #7ac142;
+  border: 1px solid #7ac142;
 }
-.icon-bar {
+.navbar-toggle .icon-bar {
+  background: black;
   display: block;
-  color: black;
-  visibility: visible;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
 }
 
 /*Header*/
 .header {
   color: white;
   text-align: center;
-  background: url('images/header_bg.png');
+  background: url('../images/header_bg.png');
 }
 .header h1 {
   margin: 15% auto 6% auto;
