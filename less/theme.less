@@ -69,6 +69,19 @@
   }
 }
 
+// Yuriy Added
+h2{
+  color: @gray-dark;
+}
+section h3{
+  color: @green;
+}
+
+.social-icons{
+  color: @white;
+}
+
+
 // Apply the mixin to the buttons
 .btn-default { .btn-styles(@btn-default-bg); text-shadow: 0 1px 0 #fff; border-color: #ccc; }
 .btn-primary { .btn-styles(@btn-primary-bg); }
@@ -274,19 +287,63 @@
 .bg-white {
   background: @white;
 }
+.bg-yellow {
+  background-color: @yellow;
+}
 .bg-green {
   background-color: @green;
 }
-.bg-gray {
-  //background: #4d4d4e;
-  background: @gray;
+.color-white{
+  color: @white;
 }
 .color-green {
   color: @green;
 }
-.color-gray-dark{
-  color: @gray-dark;
+
+/* Text color shades of gray */
+.color-gray-base{
+  color: @gray-base;
 }
 .color-gray-darker{
   color: @gray-darker;
 }
+.color-gray-dark{
+  color: @gray-dark;
+}
+.color-gray {
+  color: @gray;
+}
+.color-gray-light {
+  color: @gray-light;
+}
+.color-gray-lighter{
+  color: @gray-lighter;
+}
+
+
+/* Background color shades of gray */
+.bg-gray-base{
+  background: @gray-base;
+}
+.bg-gray-darker{
+  background: @gray-darker;
+}
+.bg-gray-dark{
+  background: @gray-dark;
+}
+.bg-gray {
+  background: @gray;
+}
+.bg-gray-light {
+  background: @gray-light;
+}
+.bg-gray-lighter{
+  background: @gray-lighter;
+}
+
+/* Footer */
+.footer{
+  background: @gray-light;
+}
+
+

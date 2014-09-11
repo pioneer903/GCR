@@ -1,7 +1,16 @@
 /* Common styles*/
 body{background: #fff;}
+
+.container {
+  overflow: hidden;
+  width: 100%;
+  margin: 0px;
+  /* we don't want the pseudo-elements sticking out */
+  padding: 0px;
+}
 .btn{border:none;}
 .center{text-align: center;}
+
 
 /* Navigation */
 .navbar{margin-bottom: 0px;}
@@ -24,19 +33,6 @@ body{background: #fff;}
 .action{margin-top: -40px;}
 .action a {width:180px;}
 
-/*.header {
-  color: white;
-  text-align: center;
-  background: url('../images/header_bg_goodby2.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.header h1 {
-	font-size: 1.3em;
-	padding: 15px 0;
-	background-color: rgba(0, 0, 0, 0.1);
-	border-radius: 4px;
-}*/
 @media(min-width: 480px){
 	.action{}
 }
@@ -46,21 +42,90 @@ body{background: #fff;}
 
 
 
+/* Home */
+.how-it-works{margin: 20px auto;}
+.video-section a{margin: 20px auto;}
+.video-section img{width:100%;}
+
+.enroll{padding: 40px; text-align: left}
+.enroll a {margin-top: 30px;}
+@media(max-width: 760px){
+	.enroll{text-align: center;}
+}
+
+section {
+	position: relative;
+	padding: 2.5em 0 .4em 0;
+	text-align: center;
+}
+section h2 {
+	padding-top: 40px;
+}
+
+/*** Individual section styles and separators (dividers) ***/
+
+/* Common style for pseudo-elements */
+section::before,
+section::after {
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
+
+/* Triangles */
+/*.ss-style-triangles::before,*/
+.ss-style-triangles::after {
+	left: 50%;
+	width: 100px;
+	height: 100px;
+	-webkit-transform: translateX(-50%) rotate(45deg);
+	transform: translateX(-50%) rotate(45deg);
+}
+
+.ss-style-triangles::before {
+	top: -50px;
+	background: #2980b9;
+}
+
+.ss-style-triangles::after {
+	bottom: -50px;
+	z-index: 10;
+	background: inherit;
+}
+
+
+.why-gcr{text-align: left}
+.why-gcr h2{text-align: center}
+.why-gcr img{width: 100%; padding-top: 30px;}
+
+.success-sories{padding-bottom: 30px;}
+.comment{text-align: left}
+.comment span{
+	float: left;
+	margin-top: 20px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 15px 20px 15px 0;
+	border-color: transparent #ffffff transparent transparent;
+	line-height: 0px;
+	_border-color: #000000 #ffffff #000000 #000000;
+	_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
+.comment p{padding:20px; background: white; margin-left: 10px;}
+
+
+
 
 /* Footer*/
 
-footer {
-  width: 100%;
-}
-.footer {
-  margin-top: 100px;
-  color: #f1f1f2;
-}
 .footer .bg-gray {
   padding: 40px 0 40px 0;
 }
 .footer li {
   list-style: none;
+  float: left;
+  padding: 0 15px ;
 }
 .footer a:link, .footer a:visited {
   color: #f1f1f2;
@@ -72,3 +137,6 @@ footer {
 .footer li:first-child, .footer li:nth-child(2) {
   border-right: 1px solid white;
 }
+
+.footer .social-icons{padding: 3px 0 0 20px; font-size: 1.2em}
+.footer .social-icons li{border:none;}

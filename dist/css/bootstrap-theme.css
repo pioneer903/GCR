@@ -32,6 +32,15 @@
 .btn.active {
   background-image: none;
 }
+h2 {
+  color: #333333;
+}
+section h3 {
+  color: #7ac142;
+}
+.social-icons {
+  color: #ffffff;
+}
 .btn-default {
   background-image: -webkit-linear-gradient(top, #ffffff 0%, #e0e0e0 100%);
   background-image: -o-linear-gradient(top, #ffffff 0%, #e0e0e0 100%);
@@ -427,19 +436,58 @@
 .bg-white {
   background: #ffffff;
 }
+.bg-yellow {
+  background-color: #e2b803;
+}
 .bg-green {
   background-color: #7ac142;
 }
-.bg-gray {
-  background: #555555;
+.color-white {
+  color: #ffffff;
 }
 .color-green {
   color: #7ac142;
 }
-.color-gray-dark {
-  color: #333333;
+/* Text color shades of gray */
+.color-gray-base {
+  color: #000000;
 }
 .color-gray-darker {
   color: #222222;
+}
+.color-gray-dark {
+  color: #333333;
+}
+.color-gray {
+  color: #555555;
+}
+.color-gray-light {
+  color: #777777;
+}
+.color-gray-lighter {
+  color: #eeeeee;
+}
+/* Background color shades of gray */
+.bg-gray-base {
+  background: #000000;
+}
+.bg-gray-darker {
+  background: #222222;
+}
+.bg-gray-dark {
+  background: #333333;
+}
+.bg-gray {
+  background: #555555;
+}
+.bg-gray-light {
+  background: #777777;
+}
+.bg-gray-lighter {
+  background: #eeeeee;
+}
+/* Footer */
+.footer {
+  background: #777777;
 }
 /*# sourceMappingURL=bootstrap-theme.css.map */
