@@ -14,6 +14,7 @@ body{background: #fff;}
 
 /* Navigation */
 .navbar{margin-bottom: 0px;}
+.navbar .container{padding: 0 20px;}
 .above-nav, .nav-btn{float: right;}
 .above-nav{margin: 10px auto;}
 .above-nav a{margin-left: 15px;}
@@ -119,10 +120,14 @@ section::after {
 
 /* Footer*/
 
-.footer .bg-gray {
-  padding: 40px 0 40px 0;
+footer .bg-gray {
+  padding: 10px 0;
 }
-.footer li {
+footer .container{padding-top:30px;}
+/*footer .logo{margin-top: -40px;}*/
+.logo img{width:100%;}
+footer ul{padding-bottom: 30px; padding-left: 0px;}
+footer li {
   list-style: none;
   float: left;
   padding: 0 15px ;
@@ -134,9 +139,28 @@ section::after {
   color: #7ac142;
   text-decoration: none;
 }
-.footer li:first-child, .footer li:nth-child(2) {
+.footer li{
   border-right: 1px solid white;
 }
+.footer li:last-child{
+	border: none;
+}
 
-.footer .social-icons{padding: 3px 0 0 20px; font-size: 1.2em}
-.footer .social-icons li{border:none;}
+footer .social-icons{font-size: 1.2em}
+footer .social-icons li{border:none;}
+
+.credits{text-align: center;}
+.credits, .credits a, .credits a:visited{color:black;}
+
+@media(max-width: 480px){
+	footer li{
+  float: left;
+  text-align: center;}
+	.footer-links ul li, .privacy ul li, .social-icons li{clear:both; border: none; padding: 15px;}
+	footer .social-icons{text-align: center; padding: 10px 5px;}
+	footer .social-icons ul li{text-align: center; padding: 10px 5px; float: left; }
+	/*footer .privacy ul li{text-align: center; border: none;}*/
+}
+
+
+
